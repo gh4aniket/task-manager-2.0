@@ -30,7 +30,7 @@ const app = express()
 // Middleware to handle cors
 app.use(
   cors({
-    origin: "*",
+    origin: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
