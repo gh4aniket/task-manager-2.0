@@ -14,11 +14,11 @@ import {
 
 const router = express.Router()
 
-router.post("/create", verifyToken, adminOnly, createTask)
+router.post("/create", verifyToken, createTask)
 
 router.get("/", verifyToken, getTasks)
 
-router.get("/dashboard-data", verifyToken, adminOnly, getDashboardData)
+router.get("/dashboard-data", verifyToken, getDashboardData)
 
 router.get("/user-dashboard-data", verifyToken, userDashboardData)
 
